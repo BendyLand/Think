@@ -6,7 +6,7 @@
 
 Full_build = {
     compiler = "g++",           -- The compiler to be used (e.g., "gcc", "clang")
-    files = {"main.cpp", "utils.cpp", "lexer.cpp"}, -- A list of source files to compile (e.g., "main.cpp", "utils.cpp")
+    files = {"main.cpp", "utils.cpp", "lexer.cpp", "ast.cpp"}, -- A list of source files to compile (e.g., "main.cpp", "utils.cpp")
     include_dirs = {},       -- Directories for include files
     preproc_opts = {},       -- Preprocessor options (e.g., macros, include paths)
     linker_opts = {},        -- Paths to check for included dependencies
