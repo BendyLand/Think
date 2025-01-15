@@ -1,6 +1,6 @@
 # Think
 
-A statically-typed Scala-inspired language that compiles to machine code via LLVM!
+A statically-typed Scala-inspired language that compiles to machine code!
 
 'Think' aims to be a general-purpose language that balances functional and object-oriented paradigms, inspired by Scala's elegance but optimized for lightweight, standalone binaries.
 
