@@ -1,4 +1,4 @@
-obj/Debug/main.o: ../main.cpp ../mystl.hpp \
+obj/Debug/utils.o: ../utils.cpp ../utils.hpp ../mystl.hpp \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/exception \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__availability \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__config \
@@ -483,7 +483,7 @@ obj/Debug/main.o: ../main.cpp ../mystl.hpp \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__bsd_locale_defaults.h \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/vector \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__split_buffer \
-  ../utils.hpp /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/fstream \
+  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/fstream \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/filesystem \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/copy_options.h \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_entry.h \
@@ -501,8 +501,9 @@ obj/Debug/main.o: ../main.cpp ../mystl.hpp \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_options.h \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/path_iterator.h \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/u8path.h \
-  ../lexer.hpp
+  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/u8path.h
+
+../utils.hpp:
 
 ../mystl.hpp:
 
@@ -1474,8 +1475,6 @@ obj/Debug/main.o: ../main.cpp ../mystl.hpp \
 
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__split_buffer:
 
-../utils.hpp:
-
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/fstream:
 
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/filesystem:
@@ -1513,5 +1512,3 @@ obj/Debug/main.o: ../main.cpp ../mystl.hpp \
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/recursive_directory_iterator.h:
 
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/u8path.h:
-
-../lexer.hpp:

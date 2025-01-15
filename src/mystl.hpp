@@ -149,26 +149,7 @@ namespace my
         // Forward std::string methods
         inline size_t size() const { return m_data.size(); }
         inline bool empty() const { return m_data.empty(); }
-    };
-};
-
-namespace my
-{
-    class regex
-    {
-    public:
-        // Constructor, Copy/Move Constructors, Destructor
-        regex() : m_pattern("") {}
-        regex(const my::string& p) : m_pattern(p) {}
-        regex(const my::regex& r) : m_pattern(r.m_pattern) {}
-        regex(my::regex&& r) noexcept : m_pattern(std::move(r.m_pattern)) {}
-        ~regex() = default;
-
-        // Methods
-        //TODO
-    private:
-        // Fields
-        my::string m_pattern;
+        inline void push(const char c) { m_data.push_back(c); }
     };
 };
 

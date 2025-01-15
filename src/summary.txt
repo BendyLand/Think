@@ -1,0 +1,73 @@
+// lexer.cpp
+#include "lexer.hpp"
+
+bool Lexer::set_line_number(size_t num)
+{
+    if (num < this->m_lines.size()-1) {
+        this->m_current = num;
+        return true;
+    }
+    return false;
+}
+
+size_t Lexer::increment_line()
+{
+    return ++this->m_current;
+}
+
+my::string Lexer::current_line()
+{
+    if (this->m_current >= this->m_lines.size()) {
+        std::cerr << "Current line index out of bounds." << std::endl;
+        exit(1);
+    }
+    return this->m_lines[this->m_current];
+}
+
+size_t Lexer::count_current_tabs()
+{
+    my::string current_line = this->current_line();
+    size_t result = 0;
+    //! eventually figure out why range loop can't find begin() for my::string
+    for (char c : current_line.str()) {
+        if (c != '\t') break;
+        result++;
+    }
+    return result;
+}
+
+// main.cpp
+#include "mystl.hpp"
+#include "utils.hpp"
+#include "lexer.hpp"
+
+using std::cout;
+using std::endl;
+
+int main()
+{
+    my::string test = read_file("../test.th");
+    Lexer lexer(test);
+
+    cout << lexer.current_line() << endl;
+    lexer.set_line_number(9);
+    cout << lexer.current_line() << endl;
+
+    return 0;
+}
+
+// utils.cpp
+#include "utils.hpp"
+
+my::string read_file(const my::string& path)
+{
+    my::string result = "";
+    std::fstream file(path);
+    if (!file.is_open()) {
+        std::cout << "There was a problem opening the file." << std::endl;
+        exit(1);
+    }
+    char c;
+    while (file.get(c)) result.push(c);
+    return result;
+}

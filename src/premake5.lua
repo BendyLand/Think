@@ -11,7 +11,7 @@ targetdir "build"
 objdir "build/obj" 
 
 -- Compiler and files
-files { "main.cpp" } 
+files { "main.cpp", "utils.cpp", "lexer.cpp" } 
 
 -- Language standard
 cppdialect "C++20" 

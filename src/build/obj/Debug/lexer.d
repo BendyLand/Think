@@ -1,4 +1,4 @@
-obj/Debug/main.o: ../main.cpp ../mystl.hpp \
+obj/Debug/lexer.o: ../lexer.cpp ../lexer.hpp ../mystl.hpp \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/exception \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__availability \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__config \
@@ -482,27 +482,9 @@ obj/Debug/main.o: ../main.cpp ../mystl.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/_types/_nl_item.h \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__bsd_locale_defaults.h \
   /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/vector \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__split_buffer \
-  ../utils.hpp /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/fstream \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/filesystem \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/copy_options.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_entry.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/file_status.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/file_type.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/perms.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/file_time_type.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/filesystem_error.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/path.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/iomanip \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/operations.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/perm_options.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/space_info.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_iterator.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_options.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/path_iterator.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/recursive_directory_iterator.h \
-  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/u8path.h \
-  ../lexer.hpp
+  /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__split_buffer
+
+../lexer.hpp:
 
 ../mystl.hpp:
 
@@ -1473,45 +1455,3 @@ obj/Debug/main.o: ../main.cpp ../mystl.hpp \
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/vector:
 
 /opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__split_buffer:
-
-../utils.hpp:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/fstream:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/filesystem:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/copy_options.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_entry.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/file_status.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/file_type.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/perms.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/file_time_type.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/filesystem_error.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/path.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/iomanip:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/operations.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/perm_options.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/space_info.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_iterator.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/directory_options.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/path_iterator.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/recursive_directory_iterator.h:
-
-/opt/homebrew/opt/llvm@14/bin/../include/c++/v1/__filesystem/u8path.h:
-
-../lexer.hpp:
